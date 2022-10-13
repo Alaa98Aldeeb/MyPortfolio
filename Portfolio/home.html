@@ -1,0 +1,161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="shortcut icon" href="images/formal_picture.jpg" type="image/x-icon">
+    <title>My Portofoli</title>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home"  id="homeLink">home</a></li>
+                <li><a href="#about">about me</a> </li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
+                <img src="images/more.png" alt="menue items" id="openMenu">
+
+            </ul>
+        </nav>
+        <div class="menuItems">
+            <a href="#home">home</a>
+            <a href="#about">about me</a>
+            <a href="#skills">skills</a>
+            <a href="#projects">projects</a>
+            <a href="#contact">contact</a>
+                
+        </div>
+    </header>
+    <div id="home">
+        <h1 class="name">hi! my name is alaa aldeeb<br>i'm <span class="auto-type"></span></h1>
+        <p class="meDetails">I love programming, coding and learning new technologies every day to improve my skills and find a propre job where i can add effect and change to other and to the world. By studing more and more i'm sure that i will reach to my goals and achieve what i dream.</p>
+        <form action="cv.pdf" method="get" target="_blank">
+            <button class="downloadCV" type="submit">download my CV</button>
+        </form>
+        
+    </div>
+
+    
+    <div id="about">
+        <h1 class="aboutTitle">about me</h1>
+        <div class="aboutImg">
+            <img src="images/about.jpg" alt="" srcset=""></div><div class="aboutContent">
+            <p>i'm a software engineer graduated from faculty of computer and information zagazig university, i have an experience with multiple programming langiages as java python c# and more another techniqal skills with mobile development, databases and aI application. i interested to keep up with latest new technologies in the world and seek to find a suitable position where i will achieve my goals.</p></div>
+    </div>
+    <h1 class="skillsTitle">my skills</h1>
+    <div id="skills">
+        <div class="skillsProg">
+            <h2 class="skillsProgTitle">programming languages</h2>
+            <p>java, python, c#, javaScript</p>
+        </div>
+        <div class="skillsDatabase">
+            <h2 class="skillsDatabaseTitle">database</h2>
+            <p>oracle 12c, sql server, firebase realtime</p>
+        </div>
+        <div class="skillsComputerScience">
+            <h2 class="skillsCSTitle">computer science</h2>
+            <p>dataStructure, algorithms, OOP</p>
+        </div>
+        <div class="skillsDesign">
+            <h2 class="skillsDesignTitle">web design</h2>
+            <p>html, cSS</p>
+        </div>
+        <div class="skillsMobile">
+            <h2 class="skillsMobileTitle">mobile development</h2>
+            <p>android development, flutter</p>
+        </div>
+        <div class="skillsOther">
+            <h2 class="skillsOtherTitle">other</h2>
+            <p>kubernetes, docker, azure devops, sDLC, agile, node js, react js</p>
+        </div>
+    </div>
+    <h1 class="projectTitle">my projects</h1>
+    <div id="projects">
+        <div class="chatbot">
+            <h2>chatbot</h2>
+            <img src="images/chatbot.png" alt="mobile application">
+            <p>aI chatbot for answering questions about simulated website for software website products</p>
+            <form action="https://github.com/Alaa98Aldeeb/chatbot" method="get" target="_blank">
+                <button class="agriMendProjectSource">view project</button>
+            </form>
+            
+        </div>
+        <div class="faceDetection">
+            <h2>face detection</h2>
+            <img src="images/face-detection.png" alt="desktop application">
+            <p>aI application for face  emotion detection which describe human face emotion</p>
+            <form action="https://github.com/Alaa98Aldeeb/Face-Emoji-Detection" method="get" target="_blank">
+                <button class="employeeDesktopAppSource">view project</button>
+            </form>
+            
+        </div>
+        <div class="agriMend">
+            <h2>agriMend</h2>
+            <img src="images/mobile.png" alt="mobile application">
+            <p>mobile application for plant disease identification and detection</p>
+            <form action="https://github.com/Alaa98Aldeeb/AgriMend" method="get" target="_blank">
+                <button class="agriMendProjectSource">view project</button>
+            </form>
+            
+        </div>
+        <div class="fashion">
+            <h2>fashion website</h2>
+            <img src="images/online-shopping.png" alt="desktop application">
+            <p>fashion website for different people and products which named "kara"</p>
+            <form action="https://karafashionwebsite.000webhostapp.com/" method="get" target="_blank">
+                <button class="employeeDesktopAppSource">view project</button>
+            </form>
+            
+        </div>
+        <div class="siaAlbum">
+            <h2>sia albums</h2>
+            <img src="images/music.png" alt="music application">
+            <p>music mobile application for sia singer</p>
+            <form action="https://github.com/Alaa98Aldeeb/Sia_Albums" method="get" target="_blank">
+                <button class="siaMobilepAppSource">view project</button>
+            </form>
+            
+        </div>
+        <div class="webDesignSample">
+            <h2>websites samples design</h2>
+            <img src="images/web.png" alt="websites samples">
+            <p>websites design samples on behance website</p>
+            <form action="https://www.behance.net/alaa1298alfb68/projects" method="get" target="_blank">
+                <button class="behanceSource">view projects</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <h1 id="contactTitle">contact me</h1>
+    <div id="contact">
+        <form action="mailto:alaa1298aldeeb@gmail.com?subject&message" method="post">
+            <input type="text" placeholder="Enter Your Name">
+            <input type="text" placeholder="Enter Subject" name="subject">
+            <textarea name="message" id="messageArea" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+            <button type="submit">send</button>
+        </form>
+    </div>
+    <div class="img">
+        <img src="images/linkedin.png" alt="" srcset="" onclick="openLink('https://www.linkedin.com/in/alaa-aldeeb-64462617a/')">
+        <img src="images/facebook.png" alt="" srcset="" onclick="openLink('https://www.facebook.com/profile.php?id=100071837590086')">
+    </div>
+    
+    <script src="backend.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="backend.js"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+        strings: ["Software Engineer"],
+        typeSpeed: 150,
+        backSpeed:150,
+        loop: true
+    });
+    </script>
+</body>
+</html>

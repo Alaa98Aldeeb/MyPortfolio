@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all .3s;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(249, 253, 253);
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    margin-top: 3%;
+    text-align: center;
+}
+header .menuItems{
+    width: 220px;
+    height: 280px;
+    background: rgb(40, 111, 158);
+    padding: 10px;
+    margin: auto;
+    display: none;
+    z-index: 2;
+}
+header .menuItems a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+header .menuItems a:hover{
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+header nav ul img{
+    cursor: pointer;
+    float: inline-start;
+    margin-left: 10%;
+    transition: 300ms linear all;
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+
+}
+header #homeLink{
+    color: rgb(40, 111, 158);
+    font-weight: bold;
+}
+header ul li{
+    display: inline-block;
+    padding: 10px 22px;
+}
+header ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: rgb(54, 54, 54);
+}
+header ul li a:hover{
+    color: rgb(40, 111, 158);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+#home, #about{
+    width: 100%;
+    margin: 10% 0;
+    text-align: center;
+    justify-content: center;
+}
+#home h1{
+    color: rgb(40, 111, 158);
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+#home .meDetails{
+    width: 80%;
+    font-size: 22px;
+    padding-top: 10px;
+    line-height: 40px;
+    letter-spacing: 3px;
+    margin-left: 10%;
+}
+#home .downloadCV{
+    background: rgb(40, 111, 158);
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-top: 3%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#about{
+    width: 100%;
+    height: 500px;
+    text-align: justify;
+}
+#about div{
+    display: inline-block;
+    width: 45%;
+    vertical-align: middle;
+    height: 100%;
+    margin-top: 2%;
+}
+#about .aboutImg img{
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+}
+#about .aboutContent{
+    padding: 30px;
+    width: 55%;
+    background: rgb(124, 167, 202);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#about .aboutContent p{
+    font-size: 20px;
+    color: #fff;
+    opacity: .9;
+    line-height: 40px;
+    margin-top: 12%;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.skillsTitle, .projectTitle, #contactTitle,#about .aboutTitle{
+    color: rgb(40, 111, 158);
+    margin-top: 10%;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+#skills, #projects, #contact{
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+#skills div, #projects div{
+    display: inline-block;
+    background: rgb(255, 255, 255, .5);
+    padding: 20px;
+    font-size: 20px;
+    width: 28%;
+    height: 200px;
+    margin: 2% 1%;
+    border-radius: 20px;
+    text-transform: capitalize;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    vertical-align: top;
+}
+#skills p, #projects div p{
+    color: rgb(54, 54, 54, .8);
+    font-size: 17px;
+}
+#skills h2{
+    margin-top: 10%;
+    margin-bottom: 10px;
+}
+#skills div:hover{
+    background: rgb(75, 170, 233);
+    cursor: context-menu;
+}
+#skills div:hover p ,#skills div:hover h2{
+    color: #fff;
+}
+#skills div:hover p{
+    color: rgb(255, 255, 255, .7);
+}
+#projects div{
+    height: 400px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 5% 8%;
+    margin-bottom: 2%;
+}
+#projects div h2{
+    margin: 5% 0;
+    color: rgb(40, 111, 158);
+}
+#projects .agriMend h2{
+    margin-top: 7%;
+}
+#projects div p{
+    color: rgb(54, 54, 54);
+    font-size: 17px;
+    margin-top: 4%;
+    padding: 12px;
+}
+#projects div button{
+    color: #fff;
+    padding: 12px;
+    font-size: 18px;
+    background: rgb(40, 111, 158);
+    margin-top: 5%;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    width: 60%;
+}
+#projects div button:hover{
+    cursor: pointer;
+}
+#projects div:hover{
+    border: 2px solid rgb(40, 111, 158);
+}
+#contact input, #contact textarea{
+    display: block;
+    width: 60%;
+    height: 35px;
+    margin : 1% auto 0 auto; /* top right bottom left*/
+    background: #fff;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+#contact textarea{
+    height: 200px;
+}
+#contact input:focus, #contact textarea:focus{
+    border: 1px solid rgb(40, 111, 158);
+    border-radius: 10px;
+    outline: none;
+    transform:scale(1.1);
+}
+#contact button{
+    width: 20%;
+    padding: 10px;
+    color: #fff;
+    background:rgb(40, 111, 158);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    margin : 3% auto 0 auto;
+}
+.img{
+    margin-top: 3%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.img img{
+    padding: 5px;
+    cursor: pointer;
+    margin-top: .5%;
+}
+@media (max-width: 617px) {
+
+    header nav ul li{
+        display: none;
+    }
+    header nav img{
+        display: block;
+    }
+    #home h1{
+        font-size: 35px;  
+    }
+    #home .meDetails{
+        font-size: 18px;
+    }
+    #home .downloadCV{
+        font-size: 16px;
+    }
+    header ul li{
+        padding: 10px 12px;
+    }
+    #skills div, #projects div{
+        padding: 20px;
+        font-size: 15px;
+        width: 90%;
+        height: 200px;
+    }
+    #projects div{
+        height: 400px;
+    }
+    #projects div button{
+        font-size: 16px;
+        margin-top: 5%;
+        width: 60%;
+    }
+    #contact input, #contact textarea{
+        width: 90%;
+        font-size: 13px;
+    }
+    #contact button{
+        width: 30%;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 618px) and (max-width: 850px){
+    header nav img{
+        display: none;
+    }
+    header .menuItems{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    header ul li a{
+        font-size: 15px;
+    }
+    #home h1{
+        font-size: 35px;  
+    }
+    #home .meDetails{
+        font-size: 18px;
+    }
+    #home .downloadCV{
+        font-size: 16px;
+    }
+    header ul li{
+        padding: 10px;
+    }
+    #skills div, #projects div{
+        padding: 20px;
+        font-size: 15px;
+        width: 45%;
+        height: 200px;
+    }
+    #projects div{
+        height: 400px;
+        width: 40%;
+        margin: 5% 2%;
+        justify-content: left;
+        align-items:flex-start;
+    }
+    #projects div p{
+        font-size: 15px;
+    }
+    #projects div button{
+        font-size: 14px;
+        margin-top: 3%;
+        width: 80%;
+    }
+    #contact input, #contact textarea{
+        width: 90%;
+        font-size: 16px;
+    }
+    #contact button{
+        width: 30%;
+        font-size: 15px;
+    }
+}
+@media (min-width: 851px) and (max-width: 1240px){
+    header nav img{
+        display: none;
+    }
+    header .menuItems{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    header ul li a{
+        font-size: 17px;
+    }
+    #home h1{
+        font-size: 38px;  
+    }
+    #home .meDetails{
+        font-size: 20px;
+    }
+    #home .downloadCV{
+        font-size: 17px;
+    }
+    header ul li{
+        padding: 12px;
+    }
+    #skills div, #projects div{
+        padding: 20px;
+        font-size: 14px;
+        width: 30%;
+        height: 200px;
+    }
+    #projects{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #projects div{
+        height: 400px;
+        width: 43%;
+        margin: 5% 3%;
+    }
+    #projects div p{
+        font-size: 17px;
+    }
+    #projects div button{
+        font-size: 15px;
+        margin-top: 3%;
+        width: 80%;
+    }
+}
+@media screen and (min-width: 1241px){
+    header nav img{
+        display: none;
+    }
+    header .menuItems{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+@media screen and (max-width: 924px){
+    #about{
+        height: 850px;
+        width: 100%;
+        vertical-align: middle;
+    }
+    #about h1{
+        margin-bottom: 2%;
+    }
+    #about .aboutImg, #about .aboutContent{
+        display: block;
+        width: 90%;
+        height: 50%;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #about .aboutContent p{
+        font-size: 17px;
+        color: #fff;
+        opacity: .9;
+        line-height: 30px;
+        margin-top: 0;
+        text-transform: capitalize;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .skillsTitle{
+        padding: 30px;
+    }
+
+}
+@media (min-width:487px) and (max-width: 924px){
+    #about .aboutContent p{
+        margin-top: 10%;
+        line-height: 35px;
+    }
+}
